@@ -1,0 +1,95 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(54, 53, 53) 100%);
+}
+h3:hover{
+    color: black;
+    transition: 1s;
+}
+.cntbox{
+    background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(54, 53, 53) 100%);
+}
+i{
+    font-size: 2em;
+}
+.whole{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.ub{
+    padding: 3%;
+}
+.contact{
+    color: tan;
+    background-color: rgb(15, 76, 117);
+    margin-top: 8rem;
+}
+.box1{
+    background: linear-gradient(to left bottom, #02f4c1,teal );
+    color: rgb(23, 16, 51);
+}
+#address:hover , .box:hover{
+    background-color: rgb(23, 143, 212);
+    color: black;
+    transition: 1s;
+}
+.box{
+    width: 100%;
+    padding: 3%;
+}
+
+
+  /* ===========REVEAL============ */
+
+  .hvr-reveal {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-color: black;
+    border-style: solid;
+    border-width: 0;
+    -webkit-transition-property: border-width;
+    transition-property: border-width;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-reveal:hover:before, .hvr-reveal:focus:before, .hvr-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    border-width: 4px;
+  }
+
+
+  /* Grow Shadow */
+.hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
